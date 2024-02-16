@@ -2,7 +2,7 @@
 <html>
 <head>
     <a href="index.html" id="homeButton">Home</a>
-    <title>Manage Customers</title>
+    <title>Orders</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,55 +39,71 @@
     </style>
 </head>
 <body>
-    <h1>Manage Customers</h1>
+    <h1>Manage Orders</h1>
     <form id="addCustomerForm">
-        <input type="text" id="firstName" name="firstName" placeholder="First Name">
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
-        <input type="email" id="emailID" name="customerID" placeholder="Customer ID">
-        <button type="submit">Add Customer</button>
+        <input type="text" id="orderID" name="orderID" placeholder="Order ID">
+        <input type="text" id="customerID" name="customerID" placeholder="Customer ID">
+        <input type="text" id="orderDate" name="orderDate" placeholder="Order Date">
+        <input type="text" id="numOrder" name="numOrder" placeholder="Number of Orders">
+        <input type="text" id="totalAmount" name="totalAmount" placeholder="Total Amount">
+        <button type="submit">Add Order</button>
     </form>
     <table id="customersTable">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Order ID</th>
             <th>Customer ID</th>
+            <th>Order Date</th>
+            <th>Number of Orders</th>
+            <th>Total Amount</th>
             <th>Actions</th>
         </tr>
         <!-- Sample Customer rows -->
         <tr>
-            <td>John</td>
-            <td>Doe</td>
+            <td>001</td>
             <td>12345</td>
+            <td>2024-02-15</td>
+            <td>3</td>
+            <td>$75.00</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Jamie</td>
-            <td>Doe</td>
+            <td>002</td>
             <td>67890</td>
+            <td>2024-02-14</td>
+            <td>1</td>
+            <td>$30.50</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Amy</td>
-            <td>John</td>
+            <td>003</td>
             <td>54321</td>
+            <td>2024-02-13</td>
+            <td>2</td>
+            <td>$50.25</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Allen</td>
-            <td>Pollen</td>
+            <td>004</td>
             <td>24680</td>
+            <td>2024-02-12</td>
+            <td>1</td>
+            <td>$20.00</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Jackson</td>
-            <td>Andrews</td>
+            <td>005</td>
             <td>13579</td>
+            <td>2024-02-11</td>
+            <td>4</td>
+            <td>$90.75</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
+
+
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <a href="index.html" id="homeButton">Home</a>
-    <title>Manage Customers</title>
+    <title>Orders</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,51 +39,45 @@
     </style>
 </head>
 <body>
-    <h1>Manage Customers</h1>
+    <h1>Manage Order Details</h1>
     <form id="addCustomerForm">
-        <input type="text" id="firstName" name="firstName" placeholder="First Name">
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
-        <input type="email" id="emailID" name="customerID" placeholder="Customer ID">
-        <button type="submit">Add Customer</button>
+        <input type="text" id="orderID" name="orderID" placeholder="Order ID">
+        <input type="text" id="customerID" name="customerID" placeholder="Customer ID">
+
+        <button type="submit">Add Order Details</button>
     </form>
     <table id="customersTable">
         <tr>
-            <th>First Name</th>
             <th>Last Name</th>
             <th>Customer ID</th>
             <th>Actions</th>
         </tr>
         <!-- Sample Customer rows -->
         <tr>
-            <td>John</td>
             <td>Doe</td>
             <td>12345</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Jamie</td>
-            <td>Doe</td>
+            <td>Dote</td>
             <td>67890</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Amy</td>
             <td>John</td>
             <td>54321</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Allen</td>
             <td>Pollen</td>
             <td>24680</td>
             <td><button>Update</button> <button>Delete</button></td>
         </tr>
 
         <tr>
-            <td>Jackson</td>
             <td>Andrews</td>
             <td>13579</td>
             <td><button>Update</button> <button>Delete</button></td>
