@@ -1,87 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <a href="index.html" id="homeButton">Home</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Order Details</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        form, table {
-            margin: 20px;
-        }
-        input, button {
-            margin-top: 10px;
-            padding: 10px;
-            width: 100%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 <body>
-    <h1>Manage Order Details</h1>
-    <form id="addCustomerForm">
-        <input type="text" id="orderID" name="orderID" placeholder="Order ID">
-        <input type="text" id="customerID" name="customerID" placeholder="Customer ID">
+    <header>
+        <button>
+            <a href="index.html" id="homeButton">Home</a>
+        </button>
+        <h1>Manage Order Details</h1>
+    </header>
 
-        <button type="submit">Add Order Details</button>
-    </form>
-    <table id="customersTable">
-        <tr>
-            <th>Last Name</th>
-            <th>Customer ID</th>
-            <th>Actions</th>
-        </tr>
-        <!-- Sample Customer rows -->
-        <tr>
-            <td>Doe</td>
-            <td>12345</td>
-            <td><button>Update</button> <button>Delete</button></td>
-        </tr>
+    <main>
+        <form id="addOrderDetailsForm">
+            <label for="orderID">Order ID:</label>
+            <input type="text" id="orderID" name="orderID" placeholder="Enter order ID" required>
 
-        <tr>
-            <td>Dote</td>
-            <td>67890</td>
-            <td><button>Update</button> <button>Delete</button></td>
-        </tr>
+            <label for="customerID">Customer ID:</label>
+            <input type="text" id="customerID" name="customerID" placeholder="Enter customer ID" required>
 
-        <tr>
-            <td>John</td>
-            <td>54321</td>
-            <td><button>Update</button> <button>Delete</button></td>
-        </tr>
+            <button type="submit">Add Order Details</button>
+        </form>
 
-        <tr>
-            <td>Pollen</td>
-            <td>24680</td>
-            <td><button>Update</button> <button>Delete</button></td>
-        </tr>
+        <table id="orderDetailsTable">
+            <thead>
+                <tr>
+                    <th>Last Name</th>
+                    <th>Customer ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Order Details rows -->
+                <tr>
+                    <td>Doe</td>
+                    <td>12345</td>
+                    <td><button class="updateButton">Update</button> <button class="deleteButton">Delete</button></td>
+                </tr>
 
-        <tr>
-            <td>Andrews</td>
-            <td>13579</td>
-            <td><button>Update</button> <button>Delete</button></td>
-        </tr>
+                <!-- Add more Order Details rows as needed -->
 
+            </tbody>
+        </table>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
